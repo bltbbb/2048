@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8" />
-	<title>Document</title>
+	<title>2048</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="css/main.css" />
 </head>
@@ -13,6 +13,17 @@
 		<button class="begin">start</button>
 	</div>
 	<div id="game_box"></div>
+	<div id="tips">
+		<h3>游戏说明</h3>
+		<ol>
+			<li>点击start开始游戏.</li>
+			<li>使用方向键进行游戏，方块会跟随方向键运动，如有两个相同数字的方块则他们将
+			合并变成新的方块.</li>
+			<li>当没有任何一个方向的方块可以移动时，游戏失败.</li>
+			<li>当分数达到2048时，你便取得了胜利.</li>
+		</ol>
+	</div>
+	<button class="tips">游戏说明</button>
 <script src="js/jquery-1.12.1.min.js"></script>
 <script src="js/main.js"></script>
 </body>

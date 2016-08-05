@@ -20,3 +20,9 @@ table div.item256{color:#fff7eb;background:#edcc61;}
 table div.item512{color:#fff7eb;background:#ecc850;}
 table div.item1024{color:#fff7eb;background:#edc53f}
 table div.item2048{color:#fff7eb;background:#eec22e;}
+
+#tips {width: 250px;position: absolute;left: -270px;top:50%;margin-top:-135px;padding: 10px;background: #F6A8A8;border-radius: 8px;}
+#tips ol {margin: 0;padding-left: 20px;font: 16px "MicroSoft YaHei";}
+#tips ol li {padding-bottom: 10px;}
+
+.tips {width: 40px;padding:10px;background: #F6A8A8;position: absolute;left: 0px;top: 50%;margin-top:-52px;border: none;border-radius: 5px;font: 16px "MicroSoft YaHei";outline: none;cursor: pointer; }

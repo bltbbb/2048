@@ -183,7 +183,7 @@ function gameover () {
 	};
 	if(cNum == 16){
 		for (var i = 1; i < len; i++) {
-			for (var j = 1; j < len; j++) {
+			for (var j = 1; j < len-1; j++) {
 				if(poxArray[i][j]==poxArray[i][j+1]||poxArray[j][i]==poxArray[j+1][i]){return;}
 			};
 		};
@@ -244,6 +244,15 @@ $(document).keydown(function(e) {
 $('.begin').click(function() {
 	initDate();
 	randomFuc();
+});
+
+$('.tips').click(function() {
+	$(this).hide();
+	$('#tips').animate({left: '15px'}, 500)
+	setTimeout(function() {
+	$('#tips').animate({left: '-270px'}, 500)
+	$('.tips').show(500);
+	}, 3000);
 });
 
 
