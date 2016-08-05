@@ -187,8 +187,8 @@ function gameover () {
 				if(poxArray[i][j]==poxArray[i][j+1]||poxArray[j][i]==poxArray[j+1][i]){return;}
 			};
 		};
-		alert('游戏结束')
-		oInput.value='再玩一次'
+		alert('game over!');
+		$('.begin').html('try agin');
 	}
 }
 
