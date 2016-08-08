@@ -69,7 +69,6 @@ function showNum (array) {
 	};
 };
 
-/*move*/
 
 /*move*/
 function toLeft (i) {
@@ -149,7 +148,7 @@ function rightComb (i) {
 
 function topComb (i) {
 	var len = poxArray.length;
-	for (var j = 1; j < len-2; j++) {
+	for (var j = 1; j < len-1; j++) {
 		if(poxArray[j][i] ==  poxArray[j+1][i] && poxArray[j+1][i] !==0 ){
 			poxArray[j][i] = poxArray[j+1][i]*2;
 			poxArray[j+1][i] = 0;
@@ -230,20 +229,19 @@ $(document).keydown(function(e) {
 	$('.score_num').html(num);
 	if(flow){
 		randomFuc();
-		showNum();
 	}else{
 		gameover();
 	}
-
+	showNum();
 	if(num === 2048){
 		alert('you are win!')
 	}
-	
 });
 
 $('.begin').click(function() {
 	initDate();
 	randomFuc();
+	$('.score_num').html('0');
 });
 
 $('.tips').click(function() {
